@@ -30,7 +30,7 @@
 │           yadamp_amps.fa
 │           yadamp_nonamps.fa
 │
-└─Utility # Utility scripts
+└─Utils # Utility scripts
         test_in_AMP-BERT.ipynb # Testing on AMP-BERT
         test_in_Bert-Protein.ipynb # Testing on Bert-Protein
         test_in_cAMPs_pred.py # Testing on cAMPs_pred
