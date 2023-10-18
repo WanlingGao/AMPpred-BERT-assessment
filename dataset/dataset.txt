@@ -1,0 +1,29 @@
+independent test data set
+
+Positive samples collected from
+APD3:the antimicrobial peptide database as a tool for research and education
+https://aps.unmc.edu/AP/
+CAMP:a useful resource for research on antimicrobial peptides
+http://www.camp.bicnirrh.res.in/
+dbAMP:an integrated resource for exploring antimicrobial peptides with functional activities and physicochemical properties on transcriptome and proteome data
+http://csb.cse.yzu.edu.tw/dbAMP/
+DRAMP 2.0:an updated data repository of antimicrobial peptides
+http://dramp.cpu-bioinfor.org/
+YADAMP:yet another database of antimicrobial peptides
+http://yadamp.unisa.it/
+ADAPTABLE:A comprehensive web platform of antimicrobial peptides tailored to the user’s research
+http://gec.u-picardie.fr/adaptable/
+AMPfun:Characterization and identification of antimicrobial peptides with different functional activities
+http://fdblab.csie.ncu.edu.tw/AMPfun/index.html
+
+(1)Peptide sequences were longer than 100 or shorter than 10 in length, and containing non-standard residues, such as 'B', 'J', 'O', 'U', 'X', or 'Z', were excluded from the analysis. 
+(2) Used the CD-HIT tool to filter out the sequences, excluding sequences that exhibited a shared sequence identity of 40% or higher with any other sequence within the same subset. 
+(3)Compare the test set with the original training sets of the models, and remove the identical sequences in the collected datasets and the training set.
+
+
+Negative samples download from Uniprot(http://www.uniprot.org)
+
+
+(1) Downloaded peptide sequences from UniProt (http://www.uniprot.org), and all peptide sequences containing 'antibacterial' related keywords were removed. 
+(2)Sequences with a length greater than 100 or less than 10 amino acids and non-standard residues "B", "J", "O", "U", "X" or "Z" were also removed.
+(3) Used the CD-HIT tool to filter out the sequences, excluding sequences that exhibited a shared sequence identity of 40% or higher with any other sequence within the same subset. 
