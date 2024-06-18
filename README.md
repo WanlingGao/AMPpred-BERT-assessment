@@ -2,12 +2,6 @@
 ```
 │  README.md
 │
-├─dependencies # Environment required
-│      AMP-BERT_env.yml
-│      Bert-Protein_env.yml
-│      cAMPs_pred_env.yml
-│      LM_pred_env.yml
-│
 ├─dataset # Evaluate experimental datasets
 │      independent dataset_AMPs.fasta
 │      independent dataset_nonAMPs.fasta
@@ -35,9 +29,6 @@
         test_in_Bert-Protein.ipynb # Testing on Bert-Protein
         test_in_cAMPs_pred.py # Testing on cAMPs_pred
         test_in_LM_pred.ipynb # Testing on LM_pred
-        ROC and PR curve.ipynb # Plotting ROC and PR curve
-        metrics.py # Calcuating evaluation indicators  
-        ensemble.py # Integrating BERT model 
 ```
 # Methods for assessments
 The environments used in this study are available on \dependencies.<br>
@@ -262,19 +253,6 @@ print(model.score(x_test,y_test))
 model.save('bert.bin')
 ```
 
-## Ensemble model
-We propose a novel AMP prediction method based on the ensemble learning strategy.
-```python
-import pandas as pd
-import sklearn.svm as svm
-
-prob=pd.read_csv('prob.txt',header=None)
-label=pd.read_csv(y_test.csv',header=None)
-
-model = svm.SVC(C=1,kernel='rbf',gamma='auto')
-model.fit(x_train,y_train)
-pred = model.predict(x_test)
-```
 # Citation
 Wanling Gao, Jun Zhao, Zehan Wang and Zhenyu Yue*, Comprehensive assessment of BERT-based methods for predicting antimicrobial peptides, 2023, Submitted.
 # Contact
