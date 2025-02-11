@@ -71,7 +71,7 @@ Peptide sequences were downloaded from UniProt http://www.uniprot.org<br>
 
 # Experimental instructions
 ## The architecture of evaluation experiments
-In the study, we employed the strategy of independent test, multiple database validation and 5-fold cross-validation to evaluate the predictive performance of these methods. In addition, we propose a novel AMP prediction method based on the ensemble learning strategy. 
+In the study, we employed the strategy of independent test, multiple database validation and 5-fold cross-validation to evaluate the predictive performance of these methods. 
 ![image](https://github.com/WanlingGao/AMPpred-BERT-assessment/blob/main/img/The%20architecture%20of%20evaluation%20experiments.PNG)
 ## Performance evaluation on the independent dataset and validation datasets
 We collected an independent test dataset based on multiple different AMP databases, and then compared and analyzed the prediction performance of different prediction tools on the independent test dataset. In order to compare the robustness and generalization ability of the model, we further tested the prediction performance of different tools on multiple validation datasets.
