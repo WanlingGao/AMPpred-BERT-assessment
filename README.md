@@ -253,7 +253,5 @@ print(model.score(x_test,y_test))
 model.save('bert.bin')
 ```
 
-# Citation
-Wanling Gao, Jun Zhao, Zehan Wang and Zhenyu Yue*, Comprehensive assessment of BERT-based methods for predicting antimicrobial peptides, 2023, Submitted.
 # Contact
 Please feel free to contact us if you need any help: zhenyuyue@ahau.edu.cn
